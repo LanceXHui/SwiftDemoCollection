@@ -13,6 +13,8 @@
 		BB424B5620DB980F00BA79FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB424B5420DB980F00BA79FA /* Main.storyboard */; };
 		BB424B5820DB981100BA79FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB424B5720DB981100BA79FA /* Assets.xcassets */; };
 		BB424B5B20DB981100BA79FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB424B5920DB981100BA79FA /* LaunchScreen.storyboard */; };
+		BB492D8120DBE122007142E4 /* buttonSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = BB492D8020DBE122007142E4 /* buttonSound.wav */; };
+		BB492D8320DBE1C6007142E4 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB492D8220DBE1C6007142E4 /* AudioManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		BB424B5720DB981100BA79FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB424B5A20DB981100BA79FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB424B5C20DB981100BA79FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB492D8020DBE122007142E4 /* buttonSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = buttonSound.wav; sourceTree = "<group>"; };
+		BB492D8220DBE1C6007142E4 /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
 		D3A51556D536AB17CB6CF7E7 /* Pods-StopWatch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StopWatch.release.xcconfig"; path = "Pods/Target Support Files/Pods-StopWatch/Pods-StopWatch.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,6 +88,8 @@
 				BB424B5720DB981100BA79FA /* Assets.xcassets */,
 				BB424B5920DB981100BA79FA /* LaunchScreen.storyboard */,
 				BB424B5C20DB981100BA79FA /* Info.plist */,
+				BB492D8020DBE122007142E4 /* buttonSound.wav */,
+				BB492D8220DBE1C6007142E4 /* AudioManager.swift */,
 			);
 			path = StopWatch;
 			sourceTree = "<group>";
@@ -149,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB424B5B20DB981100BA79FA /* LaunchScreen.storyboard in Resources */,
+				BB492D8120DBE122007142E4 /* buttonSound.wav in Resources */,
 				BB424B5820DB981100BA79FA /* Assets.xcassets in Resources */,
 				BB424B5620DB980F00BA79FA /* Main.storyboard in Resources */,
 			);
@@ -202,6 +209,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB492D8320DBE1C6007142E4 /* AudioManager.swift in Sources */,
 				BB424B5320DB980F00BA79FA /* ViewController.swift in Sources */,
 				BB424B5120DB980F00BA79FA /* AppDelegate.swift in Sources */,
 			);

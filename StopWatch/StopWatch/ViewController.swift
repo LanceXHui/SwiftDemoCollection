@@ -19,6 +19,7 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import AVFoundation
 
 class ViewController: UIViewController {
   @IBOutlet weak var countLabel: UILabel!
@@ -63,17 +64,24 @@ class ViewController: UIViewController {
     startButton.rx.tap
       .subscribe(onNext: { [weak self] in
         self?.isRuning.value = true
+        
+        AudioPlayerManagr.sharedManager.palySoundEffect()
       }).disposed(by: disposeBag)
     
     pauseButton.rx.tap
       .subscribe(onNext: { [weak self] in
         self?.isRuning.value = false
+        
+        AudioPlayerManagr.sharedManager.palySoundEffect()
     }).disposed(by: disposeBag)
     
     resetButton.rx.tap
       .subscribe(onNext: { [weak self] in
         self?.isRuning.value = false
         self?.currentNumber.value = 0
+        
+        AudioPlayerManagr.sharedManager.palySoundEffect()
+        
       }).disposed(by: disposeBag)
     }
 }
