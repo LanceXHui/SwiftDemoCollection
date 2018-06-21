@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14269.12" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14252.5"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="StopWatch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Rz-zl-uxz">
+                                <rect key="frame" x="36" y="387" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="2Rz-zl-uxz" secondAttribute="height" multiplier="1:1" id="h0G-Sw-mCt"/>
+                                    <constraint firstAttribute="width" constant="120" id="khp-sY-F45"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <state key="normal" backgroundImage="Play">
+                                    <color key="titleColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Lm-OW-hac">
+                                <rect key="frame" x="159.5" y="140" width="56" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="HtK-YD-tup"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="LqV-9h-ssd"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="100"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Eh-wL-ZX0">
+                                <rect key="frame" x="219" y="387" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="yaN-vA-WQ1"/>
+                                    <constraint firstAttribute="width" secondItem="2Eh-wL-ZX0" secondAttribute="height" multiplier="1:1" id="zNc-rh-cKZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <state key="normal" backgroundImage="Pause">
+                                    <color key="titleColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MDy-q6-b1D">
+                                <rect key="frame" x="155.5" y="273" width="64" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="MDy-q6-b1D" secondAttribute="height" multiplier="1:1" id="82o-oI-B9V"/>
+                                    <constraint firstAttribute="width" constant="64" id="Zyt-m6-FXU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <state key="normal" backgroundImage="Reset">
+                                    <color key="titleColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196078431372551" green="0.90196078431372551" blue="0.90196078431372551" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="2Eh-wL-ZX0" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-36" id="1Jo-Jo-CtW"/>
+                            <constraint firstItem="MDy-q6-b1D" firstAttribute="top" secondItem="5Lm-OW-hac" secondAttribute="bottom" constant="13" id="3Zf-cO-Zfo"/>
+                            <constraint firstItem="5Lm-OW-hac" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="EZ0-p2-B8L"/>
+                            <constraint firstItem="MDy-q6-b1D" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Gx1-gH-dwb"/>
+                            <constraint firstItem="5Lm-OW-hac" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="120" id="T6I-GK-pCh"/>
+                            <constraint firstItem="2Rz-zl-uxz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="36" id="VbN-vo-1w4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2Rz-zl-uxz" secondAttribute="bottom" constant="160" id="WjL-f8-hzD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2Eh-wL-ZX0" secondAttribute="bottom" constant="160" id="i0O-pn-8sU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="countLabel" destination="5Lm-OW-hac" id="loQ-iZ-nDM"/>
+                        <outlet property="pauseButton" destination="2Eh-wL-ZX0" id="nAX-9U-SpH"/>
+                        <outlet property="resetButton" destination="MDy-q6-b1D" id="ccy-e0-Ljj"/>
+                        <outlet property="startButton" destination="2Rz-zl-uxz" id="sDc-gu-iAc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Pause" width="200" height="200"/>
+        <image name="Play" width="200" height="200"/>
+        <image name="Reset" width="200" height="200"/>
+    </resources>
+</document>
